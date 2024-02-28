@@ -1,76 +1,112 @@
 import React from "react";
-
+import logo from "./footer_image.png";
 const Footer = () => {
   return (
-    <footer className="text-grey-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <footer className="bg-gray-300 body-font">
+      <div className="container  py-4 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div className="w-64 flex  gap-2 md:mx-0 mx-auto text-center md:text-left bg-gray-500">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span className="ml-3 text-xl">Tender Hearts</span>
+            <img src={logo} />
           </a>
-          <p className="mt-2 text-sm text-gray-500">
-            Tender Hearts School (Kursi Road), Affiliated to CBSE Board, New
-            Delhi
-          </p>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full pl-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Our Links
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">About Us</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Admission</a>
-                </li>
-                <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Photo Gallery
+                    &gt; About Us
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Career</a>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    &gt; Admission
+                  </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Contact Us
+                    &gt; Photo Gallery
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    &gt; Career
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    &gt; Contact Us
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Get in Touch
             </h2>
             <nav className="list-none mb-10">
               <ul>
-                <li>
+                <li className="flex gap-2">
+                  <svg
+                    className="h-8 w-8 text-blue-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
                   <a className="text-gray-600 hover:text-gray-800">
                     GS-160, Adharkhera, Kursi Road Lucknow
                   </a>
                 </li>
-                <li>
+                <li className="flex gap-2">
+                  <svg
+                    className="h-8 w-8 text-blue-400"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                  </svg>
                   <a className="text-gray-600 hover:text-gray-800">
                     +91-8176063900, 7054070999
                   </a>
                 </li>
-                <li>
+                <li className="flex gap-2">
+                  <svg
+                    className="h-8 w-8 text-red-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
                   <a className="text-gray-600 hover:text-gray-800">
                     tenderheartsschool1@gmail.com
                   </a>
@@ -79,7 +115,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-2/4 md:w-1/2 w-full px-8">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Our Branches
             </h2>
             <nav className="list-none mb-10">
@@ -190,11 +226,11 @@ const Footer = () => {
               </svg>
             </a>
           </span>
-          ;
+          
         </div>
       </div>
     </footer>
-  );
+  )
 };
 
 export default Footer;

@@ -9,7 +9,9 @@ const Homepage = () => {
   return (
     <>
       <Header />
+
       <Carousel />
+
       <Grid container>
         <Grid
           item
@@ -39,7 +41,7 @@ const Homepage = () => {
             cause of education has been immense.
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs ={12} sm={4} px={2}>
           <VerticalCarousel />
         </Grid>
       </Grid>

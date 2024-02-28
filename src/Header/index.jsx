@@ -51,7 +51,7 @@ function ResponsiveHeader() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h6" 
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -139,7 +139,7 @@ function ResponsiveHeader() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Tender Hearts
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
